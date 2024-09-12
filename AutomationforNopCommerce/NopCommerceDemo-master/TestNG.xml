@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <parameter name="browserType" value="Chrome Driver"/>
+    <test name="Regression Test in Chrome">
+        <classes>
+        <class name="tests.MyAccountTest">
+            <methods>
+                <include name = "TestChangePassword"/>
+                <include name = "CHeckLoginAfterChangePassword"/>
+            </methods>
+        </class>
+         <class name="tests.HoverTest">
+            <methods>
+                <include name = "HoverOverComputers"/>
+                <include name = "HoverOverElectronics"/>
+                <include name = "HoverOverApparel"/>
+            </methods>
+         </class>
+         <class name="tests.BuildComputerWishListTest">
+             <methods>
+                <include name = "TestBuildYourOwnComputer"/>
+             </methods>
+         </class>
+         <class name="tests.ShoppingCartTest">
+             <methods>
+                <include name = "ShoppingCartPageTest"/>
+             </methods>
+        </class>
+        <class name="tests.EmailPageTest">
+             <methods>
+                <include name = "RegisterNewUser"/>
+                <include name = "NavigateToLoginPage"/>
+                <include name = "NavigateToEmailFriend"/>
+             </methods>
+        </class>
+        <class name="tests.FollowUsTest">
+                <methods>
+                  <include name = "TestFacebookPage"/>
+                  <include name = "TestTwitterPage"/>
+                  <include name = "TestYouTubePage"/>
+                </methods>
+        </class>
+        </classes>
+    </test>
+</suite>
